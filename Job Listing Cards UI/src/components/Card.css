@@ -1,0 +1,122 @@
+
+.card {
+  min-height: 50vmin;
+  min-width: 46vmin;
+  height: 50vmin;
+  width: 46vmin;
+  padding: 1rem 1.3rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 5px 10px rgba( 0, 0, 0, 0.1); */
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translate( -3px, -3px);
+}
+
+.card .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top img {
+    height: 35px;
+    width: 35px;
+    padding: 4px;
+    object-fit: cover;
+    border: none;
+    border-radius: 50%;
+    border: 1px solid #dadada;
+}
+
+.top button {
+    display: flex;
+    font-size: 12px;
+    padding: 4px 8px;
+    align-items: center;
+    gap: 3px;
+    border: 1px solid #dadada;
+    border-radius: 7px;
+    background-color: transparent;
+    color: #878787;
+    cursor: pointer;
+}
+
+.center {
+    padding-bottom: 3rem;
+}
+
+.center h2 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.center h2 span {
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: #878787;
+}
+
+.center h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.center div {
+    margin-top: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.center div h4 {
+    font-size: 0.64rem;
+    font-weight: 400;
+    background-color: #e3e3e3;
+    color: #333;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.bottom {
+    padding-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #e3e3e3;
+}
+
+.bottom div h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.bottom div p {
+    font-size: 0.7rem;
+    color: #878787;
+}
+
+.bottom button {
+    font-size: 0.74rem;
+    padding: 0.38rem 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba( 0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+}
+
+.bottom button:hover {
+    background-color: #222;
+}
+
