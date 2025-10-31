@@ -88,8 +88,9 @@ npm install
 
 npm run dev
 
+---
 
-💡 Purpose of the Series :
+## 💡 Purpose of the Series :
 This series isn’t about copying UIs — it’s about understanding why they work.
 
 Each build focuses on principles like:
@@ -105,7 +106,7 @@ Accessibility & scalability
 The aim is to bridge the gap between design intuition and developer precision — creating interfaces that are both beautiful and maintainable.
 
 
-🌐 Connect with Me :
+## 🌐 Connect with Me :
 Let’s connect, collaborate, or discuss UI, React, and Open Source.
 
 🐙 GitHub
@@ -117,11 +118,11 @@ Let’s connect, collaborate, or discuss UI, React, and Open Source.
 📸 Instagram
 
 
-⚖️ License
+## ⚖️ License
 Licensed under the MIT License — feel free to explore, learn, and use the code with proper attribution.
 
 
-✨ Future Goals
+## ✨ Future Goals
 Add more UI recreations (dashboards, pricing pages, landing sections)
 
 Integrate TailwindCSS and Framer Motion for animations
@@ -129,3 +130,4 @@ Integrate TailwindCSS and Framer Motion for animations
 Document design principles behind each build
 
 Possibly evolve this into an open-source UI Study Hub
+
