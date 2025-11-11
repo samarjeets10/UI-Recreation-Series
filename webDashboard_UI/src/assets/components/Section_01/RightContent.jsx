@@ -1,9 +1,15 @@
 import React from 'react'
+import RightCard from './RightCard'
 
-function RightContent() {
+function RightContent({users}) {
+
+  console.log(users);
+
   return (
-    <div className='h-full w-3/4 bg-blue-300 '>
-      
+    <div id="right" className='h-full w-2/3 overflow-x-auto flex flex-nowrapx gap-6'>
+      {users.map((elem, index) => {
+        return <RightCard img={elem.img} tag={elem.tag} intro={elem.intro} index={index + 1} />
+      })}
     </div>
   )
 }
