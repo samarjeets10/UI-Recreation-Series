@@ -1,12 +1,12 @@
 import React from 'react'
 import './Card.css';
-
+import InnerCard from './InnerCard.jsx';
 function Card() {
   return (
     <div>
         <div className="card">
 
-            <div className="inner-card">
+            {/* <div className="inner-card">
                 <div className="price-section">
                     <div className="tag">
                         <button>Starter</button>
@@ -19,7 +19,13 @@ function Card() {
                     <p>Perfect for small Teams</p>
                     <button>Start Hiring</button>
                 </div>
-            </div>
+            </div> */}
+            
+            <InnerCard />
+
+            
+
+
 
             <div className="card-features">
                 <ul>
