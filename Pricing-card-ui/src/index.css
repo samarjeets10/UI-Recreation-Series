@@ -11,6 +11,12 @@
     box-sizing: border-box;
 }
 
+ul,
+li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
 body,
 html {
     height: 100%;
@@ -18,3 +24,55 @@ html {
     font-family: 'Roboto', sans-serif;
     background: #F4F4F4;
 }
+
+.wrapper {
+    min-height: 100dvh;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.title p {
+    text-align: center;
+    font-size: 0.79rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.card-container {
+    margin-top: 1.2rem;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+@media (width < 592px) {
+
+    .title h1 {
+        font-size: 1.5rem;
+    }
+
+    .title p {
+        font-size: 0.59rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        min-width: 35vmax;
+        min-height: 56vmax;
+    }
+}
+
