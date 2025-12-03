@@ -3,6 +3,49 @@ import './index.css';
 import Card from './components/Card';
 
 function App() {
+
+  const pricingCard = [
+    {
+      title: 'Starter',
+      price: '$0',
+      description: 'Perfect for small Teams',
+      button: 'Start Hiring',
+      features: [
+        '3 Projects',
+        'AI Applicant Screening',
+        '24/7 Customer Support'
+      ]
+    },
+
+    {
+      priceBG: '#D4DEEF',
+      titleBG: '#E8ECF8',
+      title: 'PROFESIONAL',
+      price: '$99',
+      description: 'Perfect for Growing Teams',
+      button: 'Start Hiring',
+      features: [
+        'Unlimited Projects',
+        'AI Applicant Screening',
+        'AI Recruiter',
+        'Risk-Free Guarantee',
+      ]
+    },
+
+    {
+      title: 'ENTERPRISE',
+      price: 'Custom',
+      description: 'For Large Organizations',
+      button: 'Contact Us',
+      features: [
+        'Unlimited Projects',
+        'AI Applicant Screening',
+        'Customer Skill Assessment',
+        'Custom AI Recruiter'
+      ]
+    }
+  ]
+
   return (
     <div>
       <div className='wrapper'>
@@ -13,9 +56,12 @@ function App() {
         </div>
 
         <div className="card-container">
-          <Card />
-          <Card />
-          <Card />
+          { 
+          pricingCard.map (function(elem, idx) {
+            return <div key={idx}>
+            <Card title={elem.title} titleBG={elem.titleBG} priceBG={elem.priceBG} price={elem.price} description={elem.description} button={elem.button} features={elem.features} /> </div>
+          })
+          }
         </div>
 
       </div>

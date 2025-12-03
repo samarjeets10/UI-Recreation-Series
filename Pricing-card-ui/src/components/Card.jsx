@@ -1,46 +1,35 @@
 import React from 'react'
 import './Card.css';
-import InnerCard from './InnerCard.jsx';
-function Card() {
+function Card( {title, price, description, button, features, priceBG, titleBG} ) {
   return (
     <div>
         <div className="card">
-
-            {/* <div className="inner-card">
-                <div className="price-section">
+            <div className="inner-card">
+                <div className="price-section" style={{background: priceBG || '#EEEEEE'}}>
                     <div className="tag">
-                        <button>Starter</button>
+                        <button style={{background: titleBG || '#FFF'}}>{title}</button>
                     </div>
                     <div className="price">
-                        <h1>$0<span>/month</span></h1>
+                        <h1>
+                            {price}
+                            {price !== 'Custom' && <span>/month</span>}
+                        </h1>
                     </div>
                 </div>
                 <div className="detail-section">
-                    <p>Perfect for small Teams</p>
-                    <button>Start Hiring</button>
+                    <p>{description}</p>
+                    <button>{button}</button>
                 </div>
-            </div> */}
-            
-            <InnerCard />
-
-            
-
-
-
+            </div>
+        
             <div className="card-features">
                 <ul>
-                    <li className='feature'>
+                    {features.map(function (features, key) {
+                        return <li className='feature' key={key}>
                         <div className='check-icon'><i class="ri-check-line"></i></div>
-                        <p>3 Projects</p>
+                        <p>{features}</p>
                     </li>
-                    <li className='feature'>
-                        <div className='check-icon'><i class="ri-check-line"></i></div>
-                        <p>AI Applicant Screening</p>
-                    </li>
-                    <li className='feature'>
-                        <div className='check-icon'><i class="ri-check-line"></i></div>
-                        <p>AI Recruiter</p>
-                    </li>
+                    })}
                 </ul>
             </div>
 
