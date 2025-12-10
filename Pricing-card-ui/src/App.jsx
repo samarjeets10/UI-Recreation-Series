@@ -18,8 +18,8 @@ function App() {
     },
 
     {
-      priceBG: '#D4DEEF',
-      titleBG: '#E8ECF8',
+      priceBG: '#E7ECF6',
+      titleBG: '#f1f7ff',
       title: 'PROFESIONAL',
       price: '$99',
       description: 'Perfect for Growing Teams',
