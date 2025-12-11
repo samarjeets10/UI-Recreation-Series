@@ -82,8 +82,8 @@ body {
 }
 
 img {
-  height: 0.6rem;
-  width: 0.6rem;
+  height: 30px;
+  width: 30px;
 }
 
 .text_section {
@@ -122,6 +122,12 @@ img {
   display: flex;
   align-items: center;
   gap: 0.6rem;
+  cursor: pointer;
+  transition: border 0.2s ease;
+}
+
+.btn:active {
+  border: 1.5px solid var(--text-light);
 }
 
 .btn img {
@@ -178,6 +184,11 @@ input {
   border: 1.5px solid var(--text-lighter);
   border-radius: 0.6rem;
   outline: none;
+  transition: border 0.2s ease;
+}
+
+input:focus {
+  border: 1.5px solid var(--text-light);
 }
 
 button {
@@ -201,6 +212,11 @@ button {
   color: var(--text-dark);
   margin-left: 0.5rem;
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.form_section p a:hover {
+  color: blue;
 }
 
 .bottom_section
@@ -223,6 +239,11 @@ button {
   font-size: 0.68rem;
   font-weight: 600;
   color: var(--text-light);
+  cursor: pointer;
+ }
+
+ .opt p:hover {
+  color: var(--text-dark)
  }
 
  .home {

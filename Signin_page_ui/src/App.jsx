@@ -1,14 +1,16 @@
 import React from 'react'
 import './index.css';
 import './assets/Form UI Recreation Hero.png';
-import Plane from './assets/paper-plane.svg';
 import Google from './assets/google_logo.svg';
-// import Apple from './assets/icons8-apple-logo-100.png'
+import Logo from './assets/Logo.svg';
 import Apple from './assets/apple-logo.svg';
 
 function App() {
 
-  
+  const formHandler = (evt) => {
+    evt.preventDefault();
+    console.log("form submited!!");
+  };
 
   return (
     <>
@@ -17,11 +19,17 @@ function App() {
           <div className="container">
             <div className="left_wrapper">
               <div className='text_content'>
-                <div className="header">
-                  <div className='logo'><img src={Plane} alt="img" /></div>
-                </div>
-                <div className="text_section">
 
+                {/* Header Section */}
+                <div className="header">
+                  <div className='logo'>
+                    <img src={Logo} alt="img" />
+                  </div>
+                </div>
+
+
+                {/* text Section */}
+                <div className="text_section">
                   <h1>Welcome back!</h1>
                   <p>Your work, your team, your flow — all in one place</p>
 
@@ -53,9 +61,11 @@ function App() {
 
                   {/* form section */}
                   <div className="form_section">
-                    <form>
+                    <form onSubmit={function formHandler(evt) {
+                      formHandler(evt)
+                    }}>
                       <input type="text" placeholder='Enter your email' />
-                      <button>Sign in with email</button>
+                      <button onClick={formHandler}>Sign in with email</button>
                     </form>
                     <p>
                       Don't have an account? <a>Sign up</a>
