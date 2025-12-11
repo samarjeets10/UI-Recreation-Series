@@ -3,6 +3,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
+
+:root {
+  --main-bg: #FFFFFF;
+  --text-dark : #020202;
+  --text-light : #909090;
+  --text-lighter: #BCBCBC;
+  --button-bg : #0F0F0F;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,3 +29,137 @@ body {
   width: 100%;
   font-family: "Oxygen", sans-serif;
 }
+
+.main_wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--main-bg);
+}
+
+.signin_wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem 12rem;
+}
+
+.container {
+  height:  100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.left_wrapper {
+  height: 100%;
+  width: 52%;
+  /* background-color: blue; */
+}
+
+.left_wrapper {
+  padding: 1.5rem 3.5rem;
+}
+
+.text_content {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: blue;
+}
+
+.image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: 1rem;
+  width: 1rem;
+  margin-top: 0.5rem;
+}
+
+.text_section {
+  width: 100%;
+  border: 1px solid red;
+  /* background-color: red; */
+}
+
+.text_section h1 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.text_section p {
+  font-size: 0.73rem;
+  color: var(--text-light);
+}
+
+.signin_with {
+  width: 100%;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+
+.btn {
+  padding: 0.28rem 0.8rem;
+  border: 1px solid var(--text-lighter);
+  border-radius: 2rem;
+  background-color: var(--main-bg);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.btn img {
+  height: 15px;
+  width: 15px;
+}
+
+.btn p {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+
+
+
+
+
+.bottom_section
+ {
+  width: 100%;
+  background-color: green;
+ }
+
+.right_wrapper {
+  height: 100%;
+  width: 48%;
+  background-image: url(./assets/Form\ UI\ Recreation\ Hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
