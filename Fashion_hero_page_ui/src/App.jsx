@@ -35,7 +35,7 @@ function App() {
 
         <section className="hero">
 
-          <div className="hero-left">
+          <div className="hero_left">
             <div className="hero_title_box">
 
               <div className='top'>
@@ -49,9 +49,35 @@ function App() {
               </div>
 
             </div>
+
+            <div className="box_wrapper">
+              <div className="box_1 box">
+                <h2>#RIPSTOP</h2>
+              </div>
+              <div className="box_2 box">
+                <h2>#INSULATED</h2>
+              </div>
+            </div>
+
           </div>
 
           <div className="hero_right">
+
+            <div className="right_wrapper_box">
+              <div className="option_1 option">
+                <p>LEARN MORE</p>
+                <div className="ctr_btn">
+                  <i class="ri-arrow-down-long-line"></i>
+                </div>
+              </div>
+
+              <div className="option_2 option">
+                <p>CONTACT US</p>
+                <div className="ctr_btn">
+                  <i class="ri-mail-line"></i>
+                </div>
+              </div>
+            </div>
 
           </div>
 
