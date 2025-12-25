@@ -1,5 +1,6 @@
 import React from 'react'
 import './index.css'
+import Arrow from './assets/long_arrow.png'
 
 function App() {
   return (
@@ -39,7 +40,7 @@ function App() {
             <div className="hero_title_box">
 
               <div className='top'>
-                <h1>FOR <span><i class="ri-arrow-right-long-line"></i></span> <br />
+                <h1>FOR <span><img src={Arrow} alt="arrow" /></span> <br />
                  EVERYONE BUT <br />
                  NOTANYONE
                 </h1>
