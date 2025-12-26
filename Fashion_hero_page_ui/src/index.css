@@ -271,16 +271,6 @@ nav {
     gap: 0.6rem;
   }
 
-  .right_wrapper_box {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .option {
-    width: 100%;
-    justify-content: space-between;
-  }
-
 }
 
 
@@ -301,9 +291,9 @@ nav {
   }
 
   .hero_right {
+    min-height: 30rem;
     width: 100%;
   }
-
 
 }
 
@@ -335,6 +325,16 @@ nav {
 
   .top h1 {
     font-size: 1.8rem;
+  }
+
+  .right_wrapper_box {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .option {
+    width: 100%;
+    justify-content: space-between;
   }
   
 }
