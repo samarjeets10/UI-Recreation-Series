@@ -6,6 +6,14 @@
 :root {
 
     --body-bg: #E1E1E1;
+    --card-light-bg: #FFFFFF;
+    --card-dark-bg: #130F0E;
+
+    --primary-light: #6C6C6C;
+    --secondary-light: #AAAAAA;
+
+    --border: #EFEFEF;
+    --text-dark: #000;
 }
 
 * {
@@ -34,5 +42,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 2rem;
-    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }

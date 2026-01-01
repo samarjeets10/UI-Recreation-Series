@@ -7,7 +7,6 @@ function App() {
     <>
       <div className="wrapper">
           <div className="container">
-            <h1>Card</h1>
             <Card />
           </div>
       </div>
