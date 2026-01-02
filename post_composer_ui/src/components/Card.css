@@ -5,7 +5,7 @@
     padding: 2rem;
     background-color: var(--card-light-bg);
     border-radius: 3rem;
-
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -37,6 +37,7 @@
     width: 50px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center;
 }
 
 .user_name {
@@ -58,22 +59,25 @@
 }
 
 .close_icon i {
-    font-size: 1.5rem;
-    color: var(--text-dark);
+    font-size: 1.8rem;
+    color: var(--card-dark-bg);
+    cursor: pointer;
 }
 
 .post_content {
     width: 100%;
-    margin-top: 1.5rem;
+    padding: 1rem 0 0.5rem 0;
+    border-bottom: 2px solid var(--border);
 }
 
 .post_content textarea {
     min-width: 100%;
     max-width: 100%;
+    max-height: 120px;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
+    background: transparent;
     border: none;
-    border-bottom: 2px solid var(--border);
     outline: none;
     font-size: 1rem;
     resize: none;
@@ -81,7 +85,7 @@
 }
 
 .post_content textarea::placeholder {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     font-weight: 500;
     font-family: "Open Sans", sans-serif;
     color: var(--secondary-light);
@@ -105,6 +109,12 @@
 .icons_container i {
     font-size: 1.5rem;
     color: var(--primary-light);
+    cursor: pointer;
+    transition: color 0.1s ease;
+}
+
+.icons_container i:hover {
+    color: var(--text-dark);
 }
 
 .publish_btn {
@@ -113,8 +123,9 @@
     border-radius: 1rem;
     background-color: var(--text-dark);
     color: var(--card-light-bg);
-    font-size: 0.8rem;
-    letter-spacing: 0.8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 
