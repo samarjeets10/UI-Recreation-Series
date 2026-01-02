@@ -6,7 +6,6 @@ function App() {
   return (
     <>
       <div className="wrapper">
-        <h1>Tera Rasta mai na chodu</h1>
         <Card />
       </div>
     </>
