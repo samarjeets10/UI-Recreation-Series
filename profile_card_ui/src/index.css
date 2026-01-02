@@ -1,0 +1,43 @@
+
+/* google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+:root {
+
+  --body-bg: #F8F8F8;
+
+  --primary-light: #FFFFFF;
+  --primary-dark: #000000;
+
+  --secondary-light: #F3F6FB;
+  --secondary-dark: #363636;
+
+  --text-light: #FFFFFF;
+  --text-dark: #000;
+
+  --gray-100: #757575;
+  --gray-200: #B7B7B7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, 
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Funnel Display", sans-serif;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  min-height: 100dvh;
+  width: 100dvw;
+  background-color: var(--body-bg);
+}
+
