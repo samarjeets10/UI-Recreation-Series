@@ -36,9 +36,13 @@ body {
 .wrapper {
   height: 100%;
   width: 100%;
-  position: relative;
   min-height: 100dvh;
   width: 100dvw;
   background-color: var(--body-bg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 
