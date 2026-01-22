@@ -1,0 +1,47 @@
+
+/* google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* variable colors */
+
+:root {
+
+  --body-bg : #F3F2F8;
+
+  --primary-text : #141923;
+  --secondary-text : #AAAAAC;
+
+  --containers-bg : #F3F7FF;
+  --tags-bg : #F9E9E0;
+
+  --gray-100 : #EEEEEE;
+  --gray-200 : #818084;
+
+  --blue-clr : #0A5FE0;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  height: 100dvh;
+  width: 100dvw;
+  background-color: var(--body-bg);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
