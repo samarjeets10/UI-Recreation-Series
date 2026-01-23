@@ -1,7 +1,267 @@
 
-.main__container {
-    min-height: 440px;
-    width: 700px;
-    border: 1px solid var(--gray-200);
-    border-radius: 1.5rem;
+:root {
+
+  --body-bg : #F3F2F8;
+
+  --primary-text : #141923;
+  --secondary-text : #AAAAAC;
+
+  --containers-bg : #F3F7FF;
+  --tags-bg : #F9E9E0;
+
+  --gray-100 : #e9eff9ba;
+  --gray-200 : #818084;
+
+  --blue-clr : #0A5FE0;
+  --cta-container-bg: #e1eafaba;;
 }
+
+
+
+.main__container {
+    /* min-height: 440px; */
+    /* padding-bottom: 1rem; */
+    width: 850px;
+    background-color: var(--containers-bg);
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.header_container {
+    min-height: 120px;
+    height: 120px;
+    width: 100%;
+    position: relative;
+}
+
+.bg_banner {
+    height: 100%;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: var(--tags-bg);
+    
+    display: flex;
+    justify-content: end;
+}
+
+.icon_box {
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color: var(--body-bg);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_box i {
+    font-size: 1.2rem;
+}
+
+.profile_picture {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: -45px;
+    left: 1.8rem;
+    border: 6px solid var(--body-bg);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile_picture img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.user_info {
+    width: 100%;
+    padding: 1rem 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.user_name {
+    width: 50%;
+    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.user_name h1 {
+    font-size: 1.6rem;
+    color: var(--primary-text);
+}
+
+.user-bio {
+    font-size: 0.78rem;
+    color: var(--primary-text);
+}
+
+.location {
+    font-size: 0.9rem;
+    color: var(--primary-text);
+}
+
+.user_status {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.status h4 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--gray-200);
+}
+
+.status i {
+    font-size: 1.2rem;
+    color: var(--gray-200);
+}
+
+.role_box {
+    padding: 0.3rem 0.6rem;
+    background-color: var(--gray-100);
+    border-radius: 1.5rem;
+    display: flex;
+    justify-self: flex-end;
+}
+
+.role_box h4 {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.user_action_container {
+    width: 100%;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta_btns {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.btn {
+    padding: 0.8rem 1.2rem;
+    border: 1.5px solid var(--primary-text);
+    border-radius: 2rem;
+    font-weight: 600;
+}
+
+.edit_btn {
+    background-color: var(--primary-text);
+    color: var(--body-bg);
+}
+
+.tags_section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.skills h4 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--gray-200);
+}
+
+.skills i {
+    font-size: 1.2rem;
+    color: var(--gray-200);
+}
+
+.skills_tags {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tag_box {
+    padding: 0.3rem 0.6rem;
+    background-color: var(--tags-bg);
+    border-radius: 1rem;
+}
+
+.tag_box p {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.cta_containers {
+    width: 100%;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.content_box {
+    padding: 0.8rem;
+    background-color: var(--cta-container-bg);
+    border-radius: 0.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+}
+
+.text_content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.text_content h2 {
+    font-size: 0.95rem;
+}
+
+.text_content p {
+    font-size: 0.8rem;
+    color: var(--gray-200);
+}
+
+.cta_box {
+    padding: 0.2rem;
+    border: 2px solid var(--blue-clr);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta_box i {
+    font-weight: 600;
+    color: var(--blue-clr);
+}
+
+
+

@@ -39,7 +39,9 @@ body {
 .wrapper {
   height: 100dvh;
   width: 100dvw;
-  background-color: var(--body-bg);
+  /* background-color: var(--body-bg); */
+
+  background-color: rgb(29, 29, 40);
   
   display: flex;
   align-items: center;
