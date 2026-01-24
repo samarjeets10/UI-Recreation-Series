@@ -43,11 +43,10 @@ function Card() {
 
   return (
     <div>
-
       <div className="main__container">
 
         <div className="header_container">
-          <div className="bg_banner" style={{height: '100%', width: '100%',backgroundImage: `url(${Image})`, backgroundPosition: 'center', backgroundSize: 'cover', borderRadius: "1.5rem"}}>
+          <div className="bg_banner" style={{height: '100%', width: '100%',backgroundImage: `url(${Image})`, backgroundPosition: 'center', backgroundSize: 'cover'}}>
             <div className="icon_box">
               <i class="ri-sticky-note-add-line"></i>
             </div>
@@ -126,7 +125,6 @@ function Card() {
         </div>
 
       </div>
-      
     </div>
   )
 }

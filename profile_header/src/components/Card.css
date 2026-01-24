@@ -25,6 +25,7 @@
     background-color: var(--containers-bg);
     border-radius: 1.5rem;
     overflow: hidden;
+    box-shadow: 0px 0px 25px rgba(35, 35, 35, 0.064);
 }
 
 .header_container {
@@ -48,11 +49,19 @@
     height: 2.2rem;
     width: 2.2rem;
     background-color: var(--body-bg);
+    color: var(--primary-text);
     border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.icon_box:hover {
+    background-color: var(--primary-text);
+    color: var(--body-bg);
 }
 
 .icon_box i {
@@ -75,6 +84,7 @@
     width: 100%;
     object-fit: cover;
     object-position: center;
+    background-color: var(--body-bg);
 }
 
 .user_info {
@@ -163,13 +173,21 @@
 .btn {
     padding: 0.8rem 1.2rem;
     border: 1.5px solid var(--primary-text);
+    background-color: var(--body-bg);
     border-radius: 2rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .edit_btn {
     background-color: var(--primary-text);
     color: var(--body-bg);
+    transition: all 0.2s ease-in-out;
+}
+
+.edit_btn:hover {
+    background-color: var(--body-bg);
+    color: var(--primary-text);
 }
 
 .tags_section {
@@ -190,11 +208,18 @@
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--gray-200);
+    cursor: pointer;
+}
+
+.skills h4:hover,
+.skills i:hover {
+    color: gold;
 }
 
 .skills i {
     font-size: 1.2rem;
     color: var(--gray-200);
+    cursor: pointer;
 }
 
 .skills_tags {
@@ -208,6 +233,12 @@
     padding: 0.3rem 0.6rem;
     background-color: var(--tags-bg);
     border-radius: 1rem;
+    cursor: pointer;
+    transition: scale 0.1s ease;
+}
+
+.tag_box:hover {
+    scale: 1.1;
 }
 
 .tag_box p {
@@ -227,11 +258,17 @@
     padding: 0.8rem;
     background-color: var(--cta-container-bg);
     border-radius: 0.8rem;
+    cursor: pointer;
+    transition: scale 0.1s ease;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 0.8rem;
+}
+
+.content_box:hover {
+    scale: 0.95;
 }
 
 .text_content {
